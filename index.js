@@ -100,7 +100,7 @@ let unifiedServer = (req,res)=>{
           //  Send Response
          // res.end('Hello world\n');
           // Log the request path
-          console.log('Request recive this payload - ',buffer );
+          console.log('Request recive this payload ');
           
       });
 }
@@ -111,7 +111,8 @@ let unifiedServer = (req,res)=>{
 const router ={
     'ping':handlers.ping,
     'users':handlers.users,
-    'tokens':handlers.tokens
+    'tokens':handlers.tokens,
+    'checks':handlers.checks
 }
 
 
